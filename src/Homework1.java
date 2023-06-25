@@ -25,8 +25,7 @@ int i = new Random().nextInt(k); //это кидалка случайных чи
     }
     static int rndInt() {
 //      Выбросить случайное целое число в диапазоне от 0 до 2000 и сохранить в i
-        int rnd = new Random().nextInt(0, 2000);
-        return rnd;
+        return new Random().nextInt(0, 2000);
     }
     static int maxBit(int rndInt){
         // считаем самую большую степень двойки меньше исходного числа
