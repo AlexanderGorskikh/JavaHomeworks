@@ -78,6 +78,7 @@ public class Homework4 {
                             }
                         }
                     }
+
                     firstName = Homework4.changeIdStr(id, firstName);
                     secondName = Homework4.changeIdStr(id, secondName);
                     lastName = Homework4.changeIdStr(id, lastName);
@@ -101,25 +102,28 @@ public class Homework4 {
                     firstName = Homework4.changeIdStr(id, firstName);
                     secondName = Homework4.changeIdStr(id, secondName);
                     lastName = Homework4.changeIdStr(id, lastName);
-                    age = Homework4.changeIdInt(id,age);
+                    age = Homework4.changeIdInt(id, age);
                 }
             }
 
         }
+        scanner.close();
     }
-    static ArrayList<String> changeIdStr(ArrayList<Integer> id, ArrayList<String> arrStr){
+
+    static ArrayList<String> changeIdStr(ArrayList<Integer> id, ArrayList<String> arrStr) {
         ArrayList<String> sorted = new ArrayList<>();
         for (Integer integer : id) {
             sorted.add(arrStr.get(integer));
         }
         return sorted;
     }
-    static ArrayList<Integer> changeIdInt(ArrayList<Integer> id, ArrayList<Integer> arrStr){
+
+    static ArrayList<Integer> changeIdInt(ArrayList<Integer> id, ArrayList<Integer> arrStr) {
         ArrayList<Integer> sorted = new ArrayList<>();
         for (Integer integer : id) {
             sorted.add(arrStr.get(integer));
         }
         return sorted;
     }
-
 }
+
