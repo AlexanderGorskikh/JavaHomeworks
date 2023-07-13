@@ -39,6 +39,7 @@ public class Homework5 {
         System.out.println(phoneBook);
         System.out.println("=".repeat(120));
         // Сортируем по значению и выводим в потоке
+        StringBuilder sb = new StringBuilder();
         phoneBook.entrySet().stream().sorted(Map.Entry.comparingByValue((o1, o2) -> o2.size() - o1.size())).forEach(System.out::println);
     }
 }
